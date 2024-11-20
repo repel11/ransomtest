@@ -9,7 +9,7 @@ def fetch_key_from_github(raw_url: str) -> bytes:
     """Fetch the encryption key from a GitHub raw URL."""
     response = requests.get(raw_url)
     if response.status_code == 200:
-        key = response.content.strip()
+        key = bytes.fromhex(response.text.strip())
         if len(key) != 32:
             raise ValueError("Invalid key length: Key must be 32 bytes for ChaCha20.")
         return key
