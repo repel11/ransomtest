@@ -63,7 +63,7 @@ def simulate_decryption_on_drive(drive, key: bytes):
 def main():
         try:
                 # GitHub raw URL to the key file
-            key_url = "https://raw.githubusercontent.com/repel11/test/refs/heads/main/key.txt"
+            key_url = "https://raw.githubusercontent.com/repel11/ransomtest/refs/heads/main/key.txt"
 
             # Fetch the encryption key
             key = fetch_key_from_github(key_url)
