@@ -77,7 +77,7 @@ def main():
             # Process each drive
             for drive in drives:
                 print(f"Decrypting files on {drive}")
-                simulate_decryption_on_drive(drive)
+                simulate_decryption_on_drive(drive, key)
 
             print("Decryption simulation complete. The system should remain functional.")
         except Exception as e:
